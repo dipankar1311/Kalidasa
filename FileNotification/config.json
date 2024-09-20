@@ -1,10 +1,10 @@
 {
   "credentials": {
-    "access_key_id": "AKIA5SMWGXAJTKYXFKWY",
-    "secret_access_key": "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"
+    "access_key_id": "",
+    "secret_access_key": ""
   },
   "file_info": {
-    "bucket_name": "playtime-pii",
+    "bucket_name": "-pii",
     "file_path": "pii-test-fie1.mp4"
   }
 }
