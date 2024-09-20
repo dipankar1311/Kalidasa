@@ -13,7 +13,6 @@ from openai import AzureOpenAI
 api_version = "2023-07-01-preview"
 endpoint = "https://model-serving.us-east-2.int.infra.intelligence.webex.com/azure/v1"
 
-# https://confluence-eng-gpk2.cisco.com/conf/display/WxIDocs/Quickstart#Quickstart-Usage
 client = AzureOpenAI(
     api_version=api_version,
     azure_endpoint=endpoint,
