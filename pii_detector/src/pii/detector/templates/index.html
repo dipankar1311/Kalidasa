@@ -1,0 +1,85 @@
+<div>
+    <span id="x"></span>
+    </div>
+
+    <table border="1">
+      <tr>
+        <td>PII is being discussed?</td>
+        <td id="id_is_discussing_pii" style="
+            font-weight: bold;
+            font-size: 25px;
+            text-align: center;
+        "></td>
+      </tr>
+      <tr>
+        <td>Intent Classification</td>
+        <td id="id_intent_classification"></td>
+      </tr>
+      <tr>
+        <td>PII Details</td>
+        <td id="id_pii_info_found"></td>
+      </tr>
+      <tr>
+        <td>PII Entity</td>
+        <td id="id_discussing_pii_entity"></td>
+      </tr>
+      <tr>
+        <td>Processing Time (seconds)</td>
+        <td id="id_time"></td>
+      </tr>
+    </table>
+
+    <script>
+    // Check if the browser supports webkitSpeechRecognition
+    if ('webkitSpeechRecognition' in window) {
+      var recognition = new webkitSpeechRecognition();
+      
+      // Set parameters
+      recognition.continuous = true;  // Enable continuous recognition
+      recognition.interimResults = true;  // Enable interim results
+    
+      recognition.onstart = function() {
+        console.log('Speech recognition started');
+      }
+    
+      recognition.onresult = function(event) {
+        for (var i = event.resultIndex; i < event.results.length; ++i) {
+          if (event.results[i].isFinal) {
+            console.log(event.results[i][0].transcript);
+            document.getElementById("x").innerHTML = event.results[i][0].transcript;
+
+            // Send this text as a JSON to the server
+            var xhr = new XMLHttpRequest();
+            xhr.open("POST", "https://10.53.60.89/process_text/", true);
+            xhr.setRequestHeader('Content-Type', 'application/json');
+            xhr.send(JSON.stringify({text: event.results[i][0].transcript}), null, 4);
+            xhr.onreadystatechange = function() {
+              if (xhr.readyState == XMLHttpRequest.DONE) {
+                console.log(xhr.responseText);
+
+                var response = JSON.parse(xhr.responseText);
+                document.getElementById("id_is_discussing_pii").textContent = response.is_discussing_pii;
+                document.getElementById("id_discussing_pii_entity").textContent = response.discussing_pii_entity;
+                document.getElementById("id_intent_classification").textContent = response.intent_classification;
+                document.getElementById("id_pii_info_found").textContent = response.pii_info_found;
+                document.getElementById("id_time").textContent = response.time;
+              }
+            }
+
+          } else {
+            document.getElementById("x").innerHTML = event.results[i][0].transcript;
+          }
+        }
+      }
+    
+      recognition.onerror = function(event) {
+        console.error('Error occurred in recognition: ' + event.error);
+      }
+    
+      // Start listening
+      recognition.start();
+    
+    } else {
+      console.error('Browser does not support webkitSpeechRecognition');
+    }
+</script>

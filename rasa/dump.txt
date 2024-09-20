@@ -1,0 +1,105 @@
+## intent:ask_pii
+- What's your name?
+- Could you please tell me your address?
+- Can you please share your email address?
+- Can I have your phone number?
+- What is your date of birth?
+- Could you please tell me your contact details?
+- Can you please provide your full name?
+- Could you let me know your location?
+
+Sure, here are more examples of how to ask for PII in different ways. Remember, these are just examples and don't include any real PII.
+
+```markdown
+## intent:ask_pii
+- Can you provide your address for shipping?
+- What's your full name for the record?
+- Could you let us know your email for contact purposes?
+- May I have your phone number for verification?
+- Can you tell me your birth date for age confirmation?
+- Can you please confirm your mailing address?
+- Could I get your full name for the reservation?
+- Can you spell out your email for the subscription?
+- Could we have your contact number for updates?
+- May I know your birth year for the age check?
+- What is your residential address?
+- Can I know your legal name for the documentation?
+- What's your official email id?
+- Can you provide your cell phone number?
+- May we know your date of birth for the membership?
+- Could you confirm your home address for our records?
+- What's your registered name on the account?
+- May I get your primary email address?
+- Can we have your direct line for the callback?
+- What is your year of birth for the survey?
+- Do you mind sharing your current address?
+- Can you confirm your name as per your ID?
+- May we get your work email for correspondence?
+- Could we have your home phone number for the inquiry?
+- May I know your birthday for the event?
+- What is your shipping address for the order?
+- Could you tell me your name as per your passport?
+- May I get your personal email for notifications?
+- Can you provide your landline number for the records?
+- Can you confirm your birthdate for the age restriction?
+- Do you mind confirming your billing address?
+- Can we have your full name for the invoice?
+- Could I get your official email for the meeting invite?
+- What's your mobile number for the OTP?
+- Can you confirm your date of birth for identity verification?
+- Can you please provide your postal address?
+- May we have your name as on your credit card?
+- Could you share your email for the e-receipt?
+- Can we have your emergency contact number?
+- May I know your birth details for the astrological consultation?
+- Could you confirm your permanent address for registration?
+- Could you confirm your name as on your driver's license?
+- Can I have your secondary email for backup?
+- Could you provide your daytime contact number?
+- Can you let me know your birthplace for the record?
+- Can I have your delivery address for the courier?
+- May I know your full legal name for the contract?
+- Can we have your primary email for the newsletters?
+- Could you share your personal contact number for follow-ups?
+- What's your birthdate for the special birthday offer?
+- Could you share your bank account number for the transfer?
+- What is your credit card number for the payment?
+- Can you tell me your social security number for verification?
+- May I have your tax identification number for the records?
+- Could you provide your insurance policy number?
+- Can you share your driver's license number for identification?
+- What's your passport number for the travel booking?
+- May I know your debit card number for the purchase?
+- Could you provide your retirement account number for the update?
+- Can I have your loan account number for the payment?
+- What's your bank's routing number for the wire transfer?
+- Could you tell me your mortgage account number?
+- May I know your vehicle identification number for the insurance?
+- Can I have your employer identification number for the tax form?
+- What's your health insurance policy number for the appointment?
+- Could you provide your credit card's expiry date?
+- May I have the CVV of your debit card for the transaction?
+- Can you share your bank's SWIFT code for the international transfer?
+- What's your billing zip code for the payment?
+- Could you provide your PayPal email for the refund?
+- Can you tell me your investment account number for the records?
+- May I have your employee ID number for the HR records?
+- Could you provide your bank's branch code for the deposit?
+- Can you share your credit card's billing address for verification?
+- What's your student ID number for the registration?
+- May I know your savings account number for the auto-debit setup?
+- Could you provide your Venmo handle for the payment?
+- Can I have your Bitcoin wallet address for the transfer?
+- What's your Zelle email for the reimbursement?
+- Could you provide your Square Cash ID for the transaction?
+- Can you tell me your Apple Pay ID for the purchase?
+- May I know your Google Pay number for the payment?
+- Could you provide your safety deposit box number for access?
+- Can you share your prepaid card number for the refill?
+- What's your checking account number for the check issuance?
+- May I know your credit union's routing number for the loan?
+- Could you provide your money market account number for the withdrawal?
+- Can you tell me your store credit account number for the purchase?
+- May I have your gift card number for the balance check?
+- Could you provide your frequent flyer number for the miles redemption?
+- Can you share your rewards card number for the points update?

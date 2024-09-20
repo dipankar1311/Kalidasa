@@ -1,0 +1,8 @@
+Date of Birth
+Social Security
+SSN
+Aadhar card
+Passport
+Driver's License
+Bank account
+Credit card

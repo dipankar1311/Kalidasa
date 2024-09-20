@@ -1,0 +1,162 @@
+version: "3.1"
+
+nlu:
+- intent: ask_credit_card_number
+  examples: |
+    - Can you provide your [credit card](credit_card) details?
+    - I need your [credit card](credit_card) number, please.
+    - May I get your [credit card](credit_card) info?
+    - Can you tell me your [credit card](credit_card) number?
+    - Please share your [credit card](credit_card) details.
+    - I require your [credit card](credit_card) information.
+    - Could you share your [credit card](credit_card) number?
+    - May I know your [credit card](credit_card) details?
+    - Can you please tell me your [credit card](credit_card) information?
+    - What is your [credit card](credit_card) number?
+    - I need your [credit card](credit_card) number to proceed.
+    - Can you share your [credit card](credit_card) information?
+    - I need your [credit card](credit_card) info for this transaction.
+    - What is your [credit card](credit_card) information?
+    - Can I get your [credit card](credit_card) number, please?
+    - Could you type your [credit card](credit_card) number?
+    - Can you provide your [credit card](credit_card) info?
+    - Can you tell me your [credit card](credit_card) details?
+    - Could you share your [credit card](credit_card) number with me?
+    - I need your [credit card](credit_card) details to continue.
+    - Can I have your [credit card](credit_card) details?
+    - Could you provide your [credit card](credit_card) number?
+    - May I have your [credit card](credit_card) number?
+    - May I have your [credit card](credit_card) info?
+    - Please provide your [credit card](credit_card) details.
+    - Could you tell me your [credit card](credit_card) info?
+    - Could you share your [credit card](credit_card) details?
+    - What's your [credit card](credit_card) number?
+    - I need your [credit card](credit_card) number for verification.
+
+- intent: ask_bank_account
+  examples: |
+    - Can you tell me your [bank account](bank_account) number?
+    - I need your [bank account](bank_account) details.
+    - May I have your [bank account](bank_account) info?
+    - Can you share your [bank account](bank_account) details?
+    - Could you provide your [bank account](bank_account) number?
+    - I require your [bank account](bank_account) details.
+    - Can you give me your [bank account](bank_account) information?
+    - Please provide your [bank account](bank_account) number.
+    - What is your [bank account](bank_account) number?
+    - Can you type your [bank account](bank_account) details?
+    - Could you share your [bank account](bank_account) number?
+    - May I know your [bank account](bank_account) details?
+    - Can I have your [bank account](bank_account) number?
+    - Could you tell me your [bank account](bank_account) number?
+    - Please tell me your [bank account](bank_account) number.
+    - Could you type your [bank account](bank_account) details?
+    - I require your [bank account](bank_account) number for this transaction.
+    - Can I get your [bank account](bank_account) details?
+    - Please share your [bank account](bank_account) information.
+    - Could you give me your [bank account](bank_account) details?
+    - What are your [bank account](bank_account) details?
+    - May I get your [bank account](bank_account) info?
+    - I need your [bank account](bank_account) number to proceed.
+    - Please provide me with your [bank account](bank_account) number.
+    - Can I know your [bank account](bank_account) number?
+    - What's your [bank account](bank_account) number?
+    - May I have your [bank account](bank_account) number?
+    - Can you share your [bank account](bank_account) number?
+    - I need your [bank account](bank_account) info.
+    - Can you provide your [bank account](bank_account) details?
+    - Please give me your [bank account](bank_account) details.
+
+- intent: ask_date_of_birth
+  examples: |
+    - Can you tell me your [date of birth](date_of_birth)?
+    - What is your [birth date](date of birth)?
+    - Could you please share your [date of birth](date_of_birth)?
+    - May I know your [date of birth](date_of_birth)?
+    - Can you provide your [date of birth](date_of_birth)?
+    - I need your [date of birth](date_of_birth) for verification.
+    - Can I have your [date of birth](date_of_birth), please?
+    - Can you share your [birth date](date of birth) with me?
+    - What's your [birth date](date of birth)?
+    - Could you provide your [date of birth](date_of_birth)?
+    - Please provide your [date of birth](date_of_birth).
+    - May I have your [birth date](date of birth)?
+    - Please share your [date of birth](date_of_birth).
+    - Can you please tell me your [date of birth](date_of_birth)?
+    - Could you share your [birth date](date of birth)?
+    - When is your [birth date](date of birth)?
+    - Can I know your [date of birth](date_of_birth)?
+    - Can you give me your [date of birth](date_of_birth)?
+    - Could you give me your [date of birth](date_of_birth)?
+    - I require your [date of birth](date_of_birth).
+    - Please tell me your [date of birth](date_of_birth).
+    - Can you type your [date of birth](date_of_birth)?
+    - Could you type your [birth date](date of birth)?
+    - I need your [birth date](date of birth) for records.
+    - Could you let me know your [date of birth](date_of_birth)?
+    - Please give me your [date of birth](date_of_birth).
+    - Can I get your [date of birth](date_of_birth)?
+    - What's your [date of birth](date_of_birth)?
+    - May I get your [date of birth](date_of_birth)?
+    - Please type your [birth date](date of birth).
+    - I need to know your [date of birth](date_of_birth).
+
+- intent: ask_[SSN](ssn)
+  examples: |
+    - Can you tell me your [Social Security Number](ssn)?
+    - What is your [Social Security Number](ssn)?
+    - Could you please share your [Social Security Number](ssn)?
+    - May I know your [Social Security Number](ssn)?
+    - Can you provide your [Social Security Number](ssn)?
+    - I need your [Social Security Number](ssn) for verification.
+    - Could you tell me your [Social Security Number](ssn)?
+    - Can I have your [Social Security Number](ssn), please?
+    - Can you share your [Social Security Number](ssn) with me?
+    - What's your [Social Security Number](ssn)?
+    - Could you provide your [Social Security Number](ssn)?
+    - Please provide your [Social Security Number](ssn).
+    - May I have your [Social Security Number](ssn)?
+    - Please share your [Social Security Number](ssn).
+    - Can you please tell me your [Social Security Number](ssn)?
+    - Could you share your [Social Security Number](ssn)?
+    - Can you tell me your [SSN](ssn)?
+    - Can I know your [Social Security Number](ssn)?
+    - Can you give me your [Social Security Number](ssn)?
+    - Could you give me your [Social Security Number](ssn)?
+    - I require your [Social Security Number](ssn).
+    - Can you share your [SSN](ssn) with me?
+    - Please tell me your [Social Security Number](ssn).
+    - Can you type your [Social Security Number](ssn)?
+    - Could you type your [Social Security Number](ssn)?
+    - I need your [SSN](ssn) for records.
+    - May I know your [SSN](ssn)?
+    - Could you let me know your [Social Security Number](ssn)?
+    - Please give me your [Social Security Number](ssn).
+    - Can I get your [Social Security Number](ssn)?
+    - What's your [SSN](ssn)?
+    - Could you share your [SSN](ssn)?
+    - May I get your [Social Security Number](ssn)?
+    - Please type your [SSN](ssn).
+    - I need to know your [Social Security Number](ssn).
+    - May I know what's your [SSN](ssn)?
+    - Can you share your [Social Security Number](ssn)?
+    - Could you share your [Social Security Number](ssn) with me?
+    - I need your [Social Security Number](ssn) to proceed.
+    - Can you give me your [SSN](ssn)?
+    - Please share your [SSN](ssn) with me.
+    - Could you tell me your [SSN](ssn)?
+    - Can I have your [SSN](ssn)?
+    - What is your [SSN](ssn)?
+    - I need your [SSN](ssn) for verification.
+    - Can you tell me your [SSN](ssn), please?
+    - Can you provide your [SSN](ssn)?
+    - Could you give me your [SSN](ssn)?
+    - Please provide your [SSN](ssn).
+    - May I have your [SSN](ssn)?
+    - Please share your [SSN](ssn).
+    - Can you please tell me your [SSN](ssn)?
+    - Could you share your [SSN](ssn)?
+    - Can you tell me your [SSN](ssn)?
+    - Can I know your [SSN](ssn)?
+    - Can you give me your [SSN](ssn)?
+    - Could you give me your [SSN](ssn)?

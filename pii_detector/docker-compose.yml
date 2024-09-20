@@ -1,0 +1,19 @@
+version: "3"
+
+services:
+    pii_detector:
+        build: .
+        # volumes:
+            # - ./src:/src
+        ports:
+            - "5000:8000"
+    
+    nginx:
+        image: nginx:latest
+        ports:
+            - "80:80"
+            - "443:443"
+        volumes:
+            - ./certificate.pem:/etc/ssl/certificate.pem:ro
+            - ./ssl_key.pem:/etc/ssl/ssl_key.pem:ro
+            - ./nginx.conf:/etc/nginx/nginx.conf:ro

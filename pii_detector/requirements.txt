@@ -1,0 +1,11 @@
+requests
+
+django
+djangorestframework
+django-cors-headers
+
+pii-codex
+nltk
+pii-codex[detections]
+
+openai
